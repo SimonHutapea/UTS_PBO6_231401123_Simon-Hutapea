@@ -94,10 +94,10 @@ public class Main {
                             yield null;
                         }
                     };
-                    if (perusahaan.ubahPosisi(id, posisiBaru)) {
+                    if (posisiBaru != null && perusahaan.ubahPosisi(id, posisiBaru)) {
                         System.out.println("Posisi berhasil diubah.");
                     } else {
-                        System.out.println("Karyawan dengan ID tersebut tidak ditemukan.");
+                        System.out.println("Terjadi Kesalahan input!.");
                     }
                 break;
                 case 4:
